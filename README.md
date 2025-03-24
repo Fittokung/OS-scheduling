@@ -26,3 +26,18 @@ OS Scheduling Algorithm
 ข้อเสีย:
 - มีการ Context Switching บ่อย
 - ถ้าเลือก TQ ไม่เหมาะสม (มากเกินไปหรือเล็กเกินไป) อาจส่งผลให้การทำงานไม่มีประสิทธิภาพ
+
+## Shortest Job First (SJF) Scheduling
+แนวคิด:
+- เลือก process ที่ใช้เวลา Burst Time น้อยที่สุดมาทำก่อน
+- มี 2 ประเภท
+1. Non-preemptive SJF: หาก process เริ่มทำงานแล้ว จะไม่ถูกขัดจังหวะ
+2. Preemptive SJF: หากมี process ใหม่ที่มี Burst Time สั้นกว่ากำลังรันอยู่ จะสลับไปทำ process ใหม่นั้นก่อน
+
+ข้อดี:
+- ลด Average Waiting Time
+- มีประสิทธิภาพสูงกว่าวิธีอื่นๆ
+
+ข้อเสีย:
+- อาจเกิดปัญหา Starvation
+- ต้องรู้ Burst Time ล่วงหน้า 
