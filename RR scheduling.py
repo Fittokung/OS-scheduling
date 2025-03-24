@@ -1,4 +1,4 @@
-#  RR scheduling
+# RR scheduling
 # function หา waiting time ของทุก process
 def findWaitingTime(processes, n, bt, wt, quantum):
     rem_bt = [0] * n  # สร้าง array สำหรับเก็บเวลาที่เหลือของ burst time
